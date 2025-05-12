@@ -21,8 +21,8 @@ A sleek terminal app for chatting with OpenAI models—complete with confidence-
 
 1. **Clone & install**  
    ```bash
-   git clone https://github.com/yourusername/awesome-openai-cli.git
-   cd awesome-openai-cli
+   git clone https://github.com/jitendra2603/interpretability-cli.git
+   cd interpretability-cli
    pip install -r requirements.txt
    ```
 
@@ -48,17 +48,18 @@ A sleek terminal app for chatting with OpenAI models—complete with confidence-
    Type your question and watch answers appear color-coded by confidence.
    Exit with `Ctrl+D` or type `quit`.
 
-## Usage & Flags
+## 🛠️ Usage & Flags
 
 | Flag             | Description                       | Default            |
 | ---------------- | --------------------------------- | ------------------ |
-| `--model`        | OpenAI model to use               | `text-davinci-003` |
+| `--model`        | OpenAI model to use               | `gpt-3.5-turbo`    |
 | `--max-tokens`   | Max tokens in response            | `150`              |
-| `--top-logprobs` | How many alt-tokens for logprobs  | `5`                |
+| `--logprobs`     | Request log probabilities for confidence scoring and alternative tokens | `False`            |
+| `--top-logprobs` | Show N alternative tokens (0-5) if main token confidence < 80% (requires `--logprobs`) | `0`                |
 | `--stream`       | Stream tokens as they arrive      | `False`            |
 | `--export`       | Path to save full chat log (JSON) | *none*             |
 
-## Extending
+## 💡 Extending
 
 1. Add new flags or subcommands via [Click](https://click.palletsprojects.com/)
 2. Hook into the `on_response` callback to add analytics or custom logic
