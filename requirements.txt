@@ -2,4 +2,4 @@ openai
 rich
 python-dotenv
 click
-readline; platform_system != "Windows" 
+gnureadline; platform_system != "Windows" 
