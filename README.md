@@ -29,7 +29,7 @@ A terminal application for interacting with OpenAI models. The tool supports col
    pip install -r requirements.txt
    ```
 
-## 🔧 Configuration
+## Configuration
 
 Set your OpenAI API key in an environment variable or store it in a `.env` file in the project root:
 
@@ -39,7 +39,7 @@ echo OPENAI_API_KEY="sk-..." > .env
 
 If no key is found the application will prompt for one when it starts.
 
-## 💻 Usage
+## Usage
 
 The most common invocation is:
 
@@ -71,12 +71,12 @@ python cli_tool.py \
 
 Type your question at the prompt. Exit with `Ctrl+D` or by typing `quit` or `exit`.
 
-## 🔌 Extending the tool
+## Extending the tool
 
 1. Add new flags or sub-commands using the [Click](https://click.palletsprojects.com/) library.
 2. Register callbacks in `cli_tool.py` to process or analyse responses in real time.
 3. Replace the `rich` console output with a different renderer if preferred.
 
-## 📜 Licence
+## Licence
 
 MIT licence © Jitendra
