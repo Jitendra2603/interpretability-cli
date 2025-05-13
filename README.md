@@ -5,7 +5,7 @@
 
 A terminal application for interacting with OpenAI models. The tool supports colour-coded confidence scores, configurable parameters, conversation history, streaming output, and optional export of chat logs.
 
-## 🔥 Features
+## Features
 
 - **Secure API-key handling** via prompt or `.env` file  
 - **Configurable model and generation parameters** (`--model`, `--max-tokens`, `--logprobs`, `--top-logprobs`)  
